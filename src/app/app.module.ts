@@ -14,6 +14,11 @@ import { SimilarProductsComponent } from './shared/components/similar-products/s
 import { ReviewsComponent } from './shared/components/reviews/reviews.component';
 import { RefereersComponent } from './shared/components/refereers/refereers.component';
 import { SubheaderComponent } from './shared/components/subheader/subheader.component';
+import { NavComponent } from './core/components/nav/nav.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import {MatMenuModule} from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -24,22 +29,27 @@ import { SubheaderComponent } from './shared/components/subheader/subheader.comp
     SimilarProductsComponent,
     ReviewsComponent,
     RefereersComponent,
-    SubheaderComponent
+    SubheaderComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatSlideToggleModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatIconModule,
+    MatMenuModule,
     TranslateModule.forRoot(),
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: !isDevMode(),
       // Register the ServiceWorker as soon as the application is stable
       // or after 30 seconds (whichever comes first).
-      registrationStrategy: 'registerWhenStable:30000'
-    })
+      registrationStrategy: 'registerWhenStable:30000',
+    }),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
