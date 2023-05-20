@@ -10,13 +10,21 @@ import { CardComponent } from './shared/components/card/card.component';
 import { HeaderComponent } from './core/components/header/header.component';
 import { TranslateModule } from '@ngx-translate/core';
 import { ServiceWorkerModule } from '@angular/service-worker';
+import { SimilarProductsComponent } from './shared/components/similar-products/similar-products.component';
+import { ReviewsComponent } from './shared/components/reviews/reviews.component';
+import { RefereersComponent } from './shared/components/refereers/refereers.component';
+import { SubheaderComponent } from './shared/components/subheader/subheader.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    CardComponent
+    CardComponent,
+    SimilarProductsComponent,
+    ReviewsComponent,
+    RefereersComponent,
+    SubheaderComponent
   ],
   imports: [
     BrowserModule,
