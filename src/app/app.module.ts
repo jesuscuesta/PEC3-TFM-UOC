@@ -13,13 +13,17 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { SimilarProductsComponent } from './shared/components/similar-products/similar-products.component';
 import { ReviewsComponent } from './shared/components/reviews/reviews.component';
 import { RefereersComponent } from './shared/components/refereers/refereers.component';
-import { SubheaderComponent } from './shared/components/subheader/subheader.component';
 import { NavComponent } from './core/components/nav/nav.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
-import {MatMenuModule} from '@angular/material/menu';
-import {MatDividerModule} from '@angular/material/divider';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatDividerModule } from '@angular/material/divider';
+import { HomeComponent } from './pages/home/home.component';
+import { PrincipalComponent } from './shared/components/principal/principal.component';
+import { SubheaderComponent } from './shared/components/subheader/subheader.component';
+import { SectionProductsComponent } from './shared/components/section-products/section-products.component';
+import { SummaryRefersComponent } from './shared/components/summary-refers/summary-refers.component';
 
 @NgModule({
   declarations: [
@@ -30,8 +34,12 @@ import {MatDividerModule} from '@angular/material/divider';
     SimilarProductsComponent,
     ReviewsComponent,
     RefereersComponent,
+    NavComponent,
+    HomeComponent,
+    PrincipalComponent,
     SubheaderComponent,
-    NavComponent
+    SectionProductsComponent,
+    SummaryRefersComponent,
   ],
   imports: [
     BrowserModule,
