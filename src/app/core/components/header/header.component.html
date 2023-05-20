@@ -1,1 +1,34 @@
-<p>header works!</p>
+<p>
+  <mat-toolbar color="primary">
+    <span>Agrify</span>
+    <span class="example-spacer"></span>
+    <button mat-button aria-label="Example icon-button with heart icon">
+      Inicio
+    </button>
+    <button mat-button aria-label="Example icon-button with share icon">
+      Referencias
+    </button>
+    <button mat-button aria-label="Example icon-button with share icon">
+      Contacto
+    </button>
+    <button
+      mat-icon-button
+      [matMenuTriggerFor]="menu"
+      aria-label="Example with menu icon"
+    >
+      <mat-icon>menu</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>
+        <mat-icon>dialpad</mat-icon>
+        <span>Redial</span>
+      </button>
+      <button mat-menu-item disabled>
+        <span>Check voice mail</span>
+      </button>
+      <button mat-menu-item>
+        <span>Disable alerts</span>
+      </button>
+    </mat-menu>
+  </mat-toolbar>
+</p>
