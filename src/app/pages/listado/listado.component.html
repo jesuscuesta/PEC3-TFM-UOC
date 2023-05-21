@@ -1,1 +1,22 @@
-<p>listado works!</p>
+<div class="section">
+  <div class="section__lista" *ngFor="let product of listProducts">
+    <mat-card class="section__lista-card">
+      <mat-card-header>
+        <mat-card-title-group>
+          <mat-card-title>{{product.name}}</mat-card-title>
+          <mat-card-subtitle>{{product.valoracion}}</mat-card-subtitle>
+          <mat-card-subtitle>{{product.price}} €</mat-card-subtitle>
+          <img
+            mat-card-sm-image
+            [src]="product.image"
+          />
+        </mat-card-title-group>
+      </mat-card-header>
+      <mat-card-content>
+        {{ product.description }}
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <div>Poner el mapa, con las ubicaciónes de los objetos buscados</div>
+  <div>¿SECTION CON PRODUCTOS FAVORITOS?</div>
+</div>
