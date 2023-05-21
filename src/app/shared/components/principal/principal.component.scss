@@ -1,0 +1,27 @@
+.section {
+  display: flex;
+}
+
+.section-title {
+  margin-bottom: 3px;
+}
+
+.section-subheader {
+  font-style: italic;
+}
+
+.section-desc {
+  margin-top: 20px;
+}
+
+.section-text {
+  margin-right: 40px;
+  padding: 30px;
+}
+
+.section-image {
+  width: 300px;
+  border-radius: 3px;
+  border: 1px double #0000;
+  padding: 1px;
+}
