@@ -1,4 +1,24 @@
+.section {
+  display: flex;
+  width: 100%;
+}
 .section__lista-card {
   width: 300px;
   margin: 10px;
+  display: block;
+  padding: 10px;
+}
+
+.section__lista-card:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+#map {
+  height: 400px; /* The height is 400 pixels */
+  width: 100%; /* The width is the width of the web page */
+}
+
+.section__lista-arrow {
+  cursor: pointer;
 }

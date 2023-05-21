@@ -1,0 +1,38 @@
+<div class="section">
+  <section class="carousel" aria-label="Gallery">
+    <ol class="carousel__viewport">
+      <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+        <img src="../../../../assets/frutas.jpg" alt="1" />
+      </li>
+      <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+        <img src="../../../../assets/brocoli.jpg" alt="1" />
+        <div class="carousel__snapper"></div>
+      </li>
+      <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+        <img src="../../../../assets/hortalizas.jpg" alt="1" />
+        <div class="carousel__snapper"></div>
+      </li>
+      <li id="carousel__slide4" tabindex="0" class="carousel__slide">
+        <img src="../../../../assets/verduras.jpg" alt="1" />
+        <div class="carousel__snapper"></div>
+      </li>
+    </ol>
+  </section>
+  <section class="section__product">
+    <h1>Zanahorias</h1>
+    <div class="section__product__valor">
+      <mat-icon
+        *ngFor="let _ of [].constructor(product.valoracion)"
+        class="section__lista-arrow"
+        aria-hidden="false"
+        aria-label="Valoracion icon"
+        fontIcon="star"
+      ></mat-icon>
+      <div class="section__product__valor-reviews">4 reviews</div>
+    </div>
+    <mat-divider></mat-divider>
+    <div class="section__product-price">{{product.price}} €</div>
+    <mat-divider></mat-divider>
+    <div class="section__product-desc">{{product.description}}</div>
+  </section>
+</div>

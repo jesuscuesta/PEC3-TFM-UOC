@@ -8,7 +8,6 @@ import { HomeComponent } from './home.component';
   ],
   imports: [
     CommonModule
-  ],
-  bootstrap: [HomeComponent]
+  ]
 })
 export class HomeModule { }

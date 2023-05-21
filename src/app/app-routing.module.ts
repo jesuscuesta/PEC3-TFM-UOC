@@ -13,7 +13,7 @@ const routes: Routes = [
       import('./pages/listado/listado.module').then((m) => m.ListadoModule),
   },
   {
-    path: 'detalle',
+    path: 'detail/:id',
     loadChildren: () =>
       import('./pages/detalle/detalle.module').then((m) => m.DetalleModule),
   },
