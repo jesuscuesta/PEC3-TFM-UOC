@@ -8,6 +8,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { ReviewsComponent } from '../reviews/reviews.component';
 
 const materialModules = [
   MatSlideToggleModule,
@@ -20,8 +21,8 @@ const materialModules = [
 ];
 
 @NgModule({
-  declarations: [ProductStarComponent],
+  declarations: [ProductStarComponent, ReviewsComponent],
   imports: [CommonModule, ...materialModules],
-  exports: [ProductStarComponent, ...materialModules],
+  exports: [ProductStarComponent, ReviewsComponent, ...materialModules],
 })
 export class SharedModule {}

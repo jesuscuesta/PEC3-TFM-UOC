@@ -1,1 +1,31 @@
-<p>reviews works!</p>
+<div class="section">
+  <h1 class="section-title">Reviews</h1>
+  <div class="section__users" *ngFor="let _ of [].constructor(3)">
+    <div class="section__opinion">
+      <div class="section__opinion-person">
+        <div class="section__opinion-ico">
+          <mat-icon
+            aria-hidden="false"
+            aria-label="person icon"
+            fontIcon="person"
+          ></mat-icon>
+        </div>
+        <div class="author">
+          <div class="author-name">John Doe</div>
+          <div class="author-date">Agosto 2022</div>
+          <div class="author-star">
+            <mat-icon
+              class="author-ico"
+              *ngFor="let _ of [].constructor(3)"
+              aria-hidden="false"
+              aria-label="Valoracion icon"
+              fontIcon="star"
+            ></mat-icon>
+          </div>
+        </div>
+      </div>
+      <div>Habiamos leído críticas sobre el precio. La verdad es que no es solo la materia prima, sino la exquisitez con que está hecho</div>
+    </div>
+    <mat-divider></mat-divider>
+  </div>
+</div>
