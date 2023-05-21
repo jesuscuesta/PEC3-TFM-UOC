@@ -2,16 +2,31 @@
   <mat-toolbar color="primary">
     <span>Agrify</span>
     <span class="example-spacer"></span>
-    <button mat-button aria-label="Example icon-button with heart icon">
+    <button
+      class="hide-on-mobile"
+      (click)="navigate('')"
+      mat-button
+      aria-label="Example icon-button with heart icon"
+    >
       Inicio
     </button>
-    <button (click)="navigate('listado')" mat-button aria-label="Example icon-button with share icon">
+    <button
+      class="hide-on-mobile"
+      (click)="navigate('listado')"
+      mat-button
+      aria-label="Example icon-button with share icon"
+    >
       Buscador
     </button>
-    <button mat-button aria-label="Example icon-button with share icon">
+    <button
+      class="hide-on-mobile"
+      mat-button
+      aria-label="Example icon-button with share icon"
+    >
       Contacto
     </button>
     <button
+      class="hide-on-desktop"
       mat-icon-button
       [matMenuTriggerFor]="menu"
       aria-label="Example with menu icon"
@@ -19,15 +34,14 @@
       <mat-icon>menu</mat-icon>
     </button>
     <mat-menu #menu="matMenu">
+      <button (click)="navigate('')" mat-menu-item>
+        <span>Inicio</span>
+      </button>
       <button mat-menu-item>
-        <mat-icon>dialpad</mat-icon>
-        <span>Redial</span>
+        <span>Buscador</span>
       </button>
       <button mat-menu-item disabled>
-        <span>Check voice mail</span>
-      </button>
-      <button mat-menu-item>
-        <span>Disable alerts</span>
+        <span>Contacto</span>
       </button>
     </mat-menu>
   </mat-toolbar>

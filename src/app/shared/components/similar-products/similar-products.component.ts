@@ -34,6 +34,20 @@ export class SimilarProductsComponent {
       price: 20,
       image: 'https://picsum.photos/200/300',
       valoracion: 2,
-    }
+    },
+    {
+      name: 'Puerros',
+      description: 'Descripción de los puerros',
+      price: 30,
+      image: 'https://picsum.photos/200/300',
+      valoracion: 4,
+    },
+    {
+      name: 'Maiz',
+      description: 'Descripción del maiz',
+      price: 50,
+      image: 'https://picsum.photos/200/300',
+      valoracion: 5,
+    },
   ];
 }
