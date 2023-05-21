@@ -12,12 +12,6 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { ReviewsComponent } from './shared/components/reviews/reviews.component';
 import { RefereersComponent } from './shared/components/refereers/refereers.component';
 import { NavComponent } from './core/components/nav/nav.component';
-import { HomeComponent } from './pages/home/home.component';
-import { PrincipalComponent } from './shared/components/principal/principal.component';
-import { SubheaderComponent } from './shared/components/subheader/subheader.component';
-import { SectionProductsComponent } from './shared/components/section-products/section-products.component';
-import { SummaryRefersComponent } from './shared/components/summary-refers/summary-refers.component';
-import {MatCardModule} from '@angular/material/card';
 import { SharedModule } from './shared/components/shared/shared.module';
 
 @NgModule({
@@ -29,11 +23,6 @@ import { SharedModule } from './shared/components/shared/shared.module';
     ReviewsComponent,
     RefereersComponent,
     NavComponent,
-    HomeComponent,
-    PrincipalComponent,
-    SubheaderComponent,
-    SectionProductsComponent,
-    SummaryRefersComponent,
   ],
   imports: [
     BrowserModule,

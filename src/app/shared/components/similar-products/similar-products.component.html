@@ -1,6 +1,7 @@
 <div class="section">
-  <h1>Productos Similares</h1>
+  <h1 class="section-title">Productos Similares</h1>
   <div class="section_products">
-
+    <agri-product-star [product]="product" *ngFor="let product of listProducts"></agri-product-star>
   </div>
 </div>
+<mat-divider></mat-divider>
