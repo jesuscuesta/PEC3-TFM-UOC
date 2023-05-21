@@ -24,6 +24,7 @@ import { PrincipalComponent } from './shared/components/principal/principal.comp
 import { SubheaderComponent } from './shared/components/subheader/subheader.component';
 import { SectionProductsComponent } from './shared/components/section-products/section-products.component';
 import { SummaryRefersComponent } from './shared/components/summary-refers/summary-refers.component';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import { SummaryRefersComponent } from './shared/components/summary-refers/summa
     MatButtonModule,
     MatIconModule,
     MatMenuModule,
+    MatCardModule,
     MatDividerModule,
     TranslateModule.forRoot(),
     ServiceWorkerModule.register('ngsw-worker.js', {
